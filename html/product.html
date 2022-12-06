@@ -1,30 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./product.html">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Products</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/styling/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Products</title>
 </head>
+
 <body>
-    <header>
-            <ul>
-            <li><a href="./html/checkout.html">CHECKOUT</a></li> 
-            <li style="float:right"><a class="active" href="./product.html"></a>PRODUCTS</li>
-            <li><a href="/index.html">HOME</a></li>
-          </ul>
-        </header>
-        <main>
+  <header>
+    <ul>
+      <li><a href="./html/checkout.html">CHECKOUT</a></li>
+      <li><a href="/html/admin.html">ADMIN</a></li>
+      <li><a class="active" href="/html/product.html">PRODUCTS</a></li>
+      <li><a href="/index.html">HOME</a></li>
+    </ul>
+  </header>
+  <main>
+
+    <div class="container" id="myBtnContainer">
+      <button1 class="btn active" onclick="filterSelection('all')"> Show All</button1>
+      <button1 class="btn" onclick="filterSelection('romance')">Romance</button1>
+      <button1 class="btn" onclick="filterSelection('thriller')">Thriller</button1>
+      <button1 class="btn" onclick="filterSelection('fantasy')">Fantasy</button1>
+      <button1 class="btn" onclick="filterSelection('classic')">Classic</button1>
+    </div>
+
+    <div class="container cards" id="cards">
+      <!-- <div class="card">
+        <img src="/assets/It_Ends_with_Us_(Colleen_Hoover).png" alt="John" style="width:50%">
+        <h1>It Ends With Us</h1>
+        <h2 class="author">Colleen Hoover</h2>
+        <p>2016</p>
+        <P>34.95</P>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/36430011._SY475_.jpg" alt="John" style="width:50%">
+        <h1>You</h1>
+        <h2 class="author">Caroline Kepnes</h2>
+        <P>2014</P>
+        <p>22.25</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/gone-girl.jpg" alt="John" style="width:50%">
+        <h1>Gone Girl</h1>
+        <h2 class="author">Gillian Flynn</h2>
+        <p>2012</p>
+        <p>24.95</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/thumbnail.jfif" alt="John" style="width:50%">
+        <h1>Verity</h1>
+        <h2 class="author">Colleen Hoover</h2>
+        <p>2020</p>
+        <p>23</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/percy-jackson-and-the-lightning-thief-book-1-of-percy-jackson.jpg" alt="John" style="width:50%">
+        <h1>Percy Jackson & the lightning thief</h1>
+        <h2 class="author">Rick Riordan</h2>
+        <p>2005</p>
+        <p>35.95</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/wuthering-heights-124.jpg" alt="John" style="width:50%">
+        <h1>Wuthering Heights</h1>
+        <h2 class="author">Emily Bronte</h2>
+        <p>1847</p>
+        <p>47</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/81z7E0uWdtL.jpg" alt="John" style="width:50%">
+        <h1>Frankenstein</h1>
+        <h2 class="author">Colleen Hoover</h2>
+        <p>2016</p>
+        <p>16.95</p>
+        <h3><button>Buy</button></h3>
+      </div>
+
+      <div class="card">
+        <img src="/assets/515Ezr8CeaS.jpg" alt="John" style="width:50%">
+        <h1>Fantastic beasts & where to find them</h1>
+        <h2 class="author">Colleen Hoover</h2>
+        <p>2016</p>
+        <p>26</p>
+        <h3><button>Buy</button></h3>
+      </div> -->
+    </div>
 
 
-       
- </main>
- 
- <div class="footer">
+
+
+
+  </main>
+
+  <div class="footer">
     &copy; Copyright 2022 Sav
   </div>
 
-
+<script src="/script/product.js"></script>
 </body>
+
 </html>

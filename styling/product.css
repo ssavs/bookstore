@@ -8,7 +8,7 @@
 
 body {
     background:url(/assets/lucie-morel-DsWjM4iOmyA-unsplash.jpg) no-repeat center/cover fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ul {
@@ -38,9 +38,11 @@ ul {
 
 }
 
+
+
 .active {
-    background-color: #030303aa;
-    color: rgba(255, 255, 255, 0.837);
+    background-color: #030303b1;
+    color: white
   }
 
 .footer {
@@ -52,3 +54,92 @@ ul {
     color: rgb(255, 255, 255);
     text-align: center;
  }
+
+ #myBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 15px 15px;
+  font-size: 18px;
+  gap: 0.5em;
+  
+}
+
+.filterDiv {
+  float: left;
+  background-color: #090909;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display:flex;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+}
+
+#cards{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  gap: 1em;
+}
+
+.author {
+  color: rgb(7, 7, 7);
+  font-size: 18px;
+}
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px; 
+  color: rgba(0, 0, 0, 0.675);
+}
+
+button:hover, a:hover {
+  opacity: 0.9;
+}
+

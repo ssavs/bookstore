@@ -38,9 +38,13 @@ ul {
 
 }
 
+.headings {
+  text-align: center;
+}
+
 .active {
-    background-color: #030303aa;
-    color: rgba(255, 255, 255, 0.837);
+    background-color: #030303b1;
+    color: white
   }
 
 .footer {
@@ -54,10 +58,16 @@ ul {
  }
 
  .heading{
-    font-size: 77px;
+    font-size: 135px;
  }
 
  .heading1 {
-    font-size: 60px;
+    font-size: 80px;
+    color: whitesmoke;
+    padding-top: 25px;
 
+ }
+
+ a {
+  font-size: 20px;
  }
