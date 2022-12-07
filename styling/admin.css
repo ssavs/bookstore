@@ -8,7 +8,7 @@
 
 body {
     background:url(/assets/lucie-morel-DsWjM4iOmyA-unsplash.jpg) no-repeat center/cover fixed;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 ul {
@@ -60,6 +60,3 @@ a {
     text-align: center;
  }
 
- .bookshelves{
-    overflow: hidden;
- }

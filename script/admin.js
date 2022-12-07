@@ -43,7 +43,7 @@ JSON.parse(localStorage.getItem('bookstore')) : [
     
     {
         id:5,
-        title:"Percy Jackson & the lightning thief",
+        title:"Percy Jackson",
         author:"Rick Riordan",
         published:2005,
         price:35.95,
@@ -73,7 +73,7 @@ JSON.parse(localStorage.getItem('bookstore')) : [
     
     {
         id:8,
-        title:"Fantastic beasts & where to find them",
+        title:"Fantastic beasts",
         author:"J.K Rowling",
         published:2001,
         price:26,
@@ -89,7 +89,7 @@ Object.keys(books).forEach((bookshelf)=>{
     document.querySelector('tbody').innerHTML +=
     ` <tr>
     <th scope="row">${books[bookshelf].id}</th>
-    <td><img src="${books[bookshelf].img} class="card-img-top" alt="..."</td>
+    <td><img src="${books[bookshelf].img} class="card-img-top" alt="..." width="100px" height="150px"></td>
     <td>${books[bookshelf].title}</td>
     <td>${books[bookshelf].author}</td>
     <td>${books[bookshelf].published}</td>
