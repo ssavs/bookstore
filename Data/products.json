@@ -8,7 +8,8 @@
     "author": "Colleen Hoover",
     "published":2016,
     "price":34.95,
-    "img":"https://i.postimg.cc/nVY3SHKt/It-Ends-with-Us-Colleen-Hoover.png"
+    "img":"https://i.postimg.cc/nVY3SHKt/It-Ends-with-Us-Colleen-Hoover.png",
+    "genre":"Romance"
     },
     
     {
@@ -17,7 +18,8 @@
     "author":"Caroline Kepnes",
     "published": 2014,
     "price":22.25,
-    "img":"https://i.postimg.cc/5053XVfJ/36430011-SY475.jpg"
+    "img":"https://i.postimg.cc/5053XVfJ/36430011-SY475.jpg",
+    "genre":"Thriller"
     },
     
     {
@@ -26,7 +28,8 @@
     "author":"Gillian Flynn",
     "published":2012,
     "price":24.95,
-    "img":"https://i.postimg.cc/TwTkqw71/gone-girl.jpg"
+    "img":"https://i.postimg.cc/TwTkqw71/gone-girl.jpg",
+    "genre":"Thriller"
     },
     
     {
@@ -35,7 +38,8 @@
         "author":"Colleen Hoover",
         "published":2020,
         "price": 23 ,
-        "img":"https://i.postimg.cc/CKwDc6DM/thumbnail.jpg"
+        "img":"https://i.postimg.cc/CKwDc6DM/thumbnail.jpg",
+        "genre":"Thriller"
     },
     
     {
@@ -44,7 +48,8 @@
         "author":"Rick Riordan",
         "published":2005,
         "price":35.95,
-        "img":"https://i.postimg.cc/7L41pLvk/percy-jackson-and-the-lightning-thief-book-1-of-percy-jackson.jpg"
+        "img":"https://i.postimg.cc/7L41pLvk/percy-jackson-and-the-lightning-thief-book-1-of-percy-jackson.jpg",
+        "genre":"Fantasy"
     },
     
     {
@@ -53,7 +58,8 @@
         "author":"Emily Bronte",
         "published":1847,
         "price": 47,
-        "img":"https://i.postimg.cc/433kbs8J/wuthering-heights-124.jpg"
+        "img":"https://i.postimg.cc/433kbs8J/wuthering-heights-124.jpg",
+        "genre":"Classic"
     },
     
     {"id":7,
@@ -61,7 +67,8 @@
     "author":"Mary Shelley",
     "published":1818,
     "price":16.95 ,
-    "img":"https://i.postimg.cc/0NzXyQWJ/81z7-E0u-Wdt-L.jpg"
+    "img":"https://i.postimg.cc/0NzXyQWJ/81z7-E0u-Wdt-L.jpg",
+    "genre":"Classic"
     },
     
     {
@@ -70,7 +77,8 @@
         "author":"J.K Rowling",
         "published":2001,
         "price":26,
-        "img":"https://i.postimg.cc/T13DTy0z/515-Ezr8-Cea-S.jpg"
+        "img":"https://i.postimg.cc/T13DTy0z/515-Ezr8-Cea-S.jpg",
+        "genre":"Fantasy"
     }
     
 ]
