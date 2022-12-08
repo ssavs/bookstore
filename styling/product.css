@@ -55,15 +55,18 @@ ul {
     text-align: center;
  }
 
+
+
  #myBtnContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto 15px 15px;
-  font-size: 18px;
+  margin: auto 25px 25px;
+  font-size: 25px;
   gap: 0.5em;
   
 }
+
 
 .filterDiv {
   float: left;

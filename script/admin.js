@@ -95,6 +95,8 @@ Object.keys(books).forEach((bookshelf)=>{
     <td>${books[bookshelf].published}</td>
     <td>${books[bookshelf].price}</td>
     <td>${books[bookshelf].genre}</td>
+    <td><button type="button" class="btn btn-dark">edit</button></td>
+    <td><button type="button" class="btn btn-dark">delete</button></td>
   </tr>`
 }
 

@@ -38,8 +38,6 @@ ul {
 
 }
 
-
-
 .active {
     background-color: #030303b1;
     color: white
@@ -59,4 +57,8 @@ ul {
     text-decoration: none;
     font-size: 20px; 
     color: rgba(0, 0, 0, 0.675);
+  }
+
+  .containter{
+column-count: 2;
   }
