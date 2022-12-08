@@ -60,3 +60,10 @@ a {
     text-align: center;
  }
 
+main {
+  text-align: center;
+}
+
+.dry {
+  margin-bottom: 100px;
+}
