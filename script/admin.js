@@ -103,3 +103,4 @@ Object.keys(books).forEach((bookshelf)=>{
 
 }
 display();
+localStorage.setItem("tbody",JSON.stringify(books));
