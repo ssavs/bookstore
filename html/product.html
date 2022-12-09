@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styling/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="/styling/product.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
-</head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="/html/checkout.html">CHECKOUT</a></li>
+        <li><a href="/html/admin.html">ADMIN</a></li>
+        <li><a class="active" href="/html/product.html">PRODUCTS</a></li>
+        <li><a href="/index.html">HOME</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container" id="myBtnContainer">
+        <button1 class="btn active" onclick="filterSelection('all')">
+          Show All</button1
+        >
+        <button1 class="btn" onclick="filterSelection('romance')"
+          >Romance</button1
+        >
+        <button1 class="btn" onclick="filterSelection('thriller')"
+          >Thriller</button1
+        >
+        <button1 class="btn" onclick="filterSelection('fantasy')"
+          >Fantasy</button1
+        >
+        <button1 class="btn" onclick="filterSelection('classic')"
+          >Classic</button1
+        >
+      </div>
 
-<body>
-  <header>
-    <ul>
-      <li><a href="/html/checkout.html">CHECKOUT</a></li>
-      <li><a href="/html/admin.html">ADMIN</a></li>
-      <li><a class="active" href="/html/product.html">PRODUCTS</a></li>
-      <li><a href="/index.html">HOME</a></li>
-    </ul>
-  </header>
-  <main>
-
-    <div class="container" id="myBtnContainer">
-      <button1 class="btn active" onclick="filterSelection('all')"> Show All</button1>
-      <button1 class="btn" onclick="filterSelection('romance')">Romance</button1>
-      <button1 class="btn" onclick="filterSelection('thriller')">Thriller</button1>
-      <button1 class="btn" onclick="filterSelection('fantasy')">Fantasy</button1>
-      <button1 class="btn" onclick="filterSelection('classic')">Classic</button1>
-    </div>
-
-    <div class="container cards" id="cards">
-      <!-- <div class="card">
+      <div class="container cards" id="cards">
+        <!-- <div class="card">
         <img src="/assets/It_Ends_with_Us_(Colleen_Hoover).png" alt="John" style="width:50%">
         <h1>It Ends With Us</h1>
         <h2 class="author">Colleen Hoover</h2>
@@ -102,20 +118,16 @@
         <p>26</p>
         <h3><button>Buy</button></h3>
       </div> -->
-    </div>
+      </div>
+    </main>
 
+    <div class="footer">&copy; Copyright 2022 Sav</div>
 
-
-
-
-  </main>
-
-  <div class="footer">
-    &copy; Copyright 2022 Sav
-  </div>
-
-<script src="/script/product.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-
+    <script src="/script/product.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
