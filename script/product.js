@@ -83,16 +83,16 @@ let books = JSON.parse(localStorage.getItem("bookstore"))
     ];
 
 function display() {
-  books.forEach((library) => {
-    document.querySelector("bookstore").innerHTML += `
+  books.forEach((book) => {
+    document.querySelector("book").innerHTML += `
         <div class="card" style="width: 18rem;">
-        <img src="${library.img}" class="card-img-top" alt="...">
+        <img src="${book.img}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h1>${library.title}</h1>
-          <h2 class="author">${library.author}<h2>
-          <h5>${library.published}</h5>
-          <h5>Price: R${library.price}</h5>
-          <h5>${library.genre}</h5>
+          <h1>${book.title}</h1>
+          <h2 class="author">${book.author}<h2>
+          <h5>${book.published}</h5>
+          <h5>Price: R${book.price}</h5>
+          <h5>${bookstore.genre}</h5>
       
         </div>
         <div class="card-footer">
@@ -105,7 +105,6 @@ function display() {
 display();
 
 localStorage.setItem("bookstore", JSON.stringify(books));
-
 
 let checkoutPage = [];
 localStorage.setItem("checkoutStore", JSON.stringify(checkoutPage));
