@@ -1,5 +1,5 @@
-let books = JSON.parse(localStorage.getItem("#cards"))
-  ? JSON.parse(localStorage.getItem("#cards"))
+let books = JSON.parse(localStorage.getItem("bookstore"))
+  ? JSON.parse(localStorage.getItem("bookstore"))
   : [
       {
         id: 1,
@@ -84,7 +84,7 @@ let books = JSON.parse(localStorage.getItem("#cards"))
 
 function display() {
   books.forEach((library) => {
-    document.querySelector("#cards").innerHTML += `
+    document.querySelector("bookstore").innerHTML += `
         <div class="card" style="width: 18rem;">
         <img src="${library.img}" class="card-img-top" alt="...">
         <div class="card-body">
@@ -96,7 +96,7 @@ function display() {
       
         </div>
         <div class="card-footer">
-        <a href="/html/checkout.html" class="btn btn-dark">Add to Checkout</a>
+        <a id="checkoutBtn" href="" class="btn btn-dark">Add to Checkout</a>
         </div>
       </div>
               `;
@@ -104,4 +104,52 @@ function display() {
 }
 display();
 
-    
+localStorage.setItem("bookstore", JSON.stringify(books));
+
+
+let checkoutPage = [];
+localStorage.setItem("checkoutStore", JSON.stringify(checkoutPage));
+
+let addToCheckoutBtn = [...document.querySelectorAll("#checkoutBtn")];
+console.log(addToCheckoutBtn);
+
+Object.keys(addToCheckoutBtn).forEach((item) => {
+  addToCheckoutBtn[item].addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(addToCheckoutBtn[item]);
+    console.log(books[item]);
+    checkoutPage.push(books[item]);
+    console.log(checkoutPage);
+    localStorage.setItem("checkoutStore", JSON.stringify(checkoutPage));
+  });
+});
+
+//attempting to filter my books//
+
+// let filtered = document.getElementById("#myBtnContainer");
+// filtered.addEventListener("change",(e)=>{
+//   console.log(e.target.value)
+//   let filteredBooks = books.filter(item =>{
+//     return item.genre === e.target.value
+//   })
+
+//   document.querySelector("#cards").innerHTML ="";
+//   Object.keys(filteredBooks).forEach((item) => {
+//   document.querySelector("#cards").innerHTML += `
+//   <div class="card" style="width: 18rem;">
+//   <img src="${filteredBooks[item].img}" class="card-img-top" alt="...">
+//   <div class="card-body">
+//     <h1>${filteredBooks[item].title}</h1>
+//     <h2 class="author">${filteredBooks[item].author}<h2>
+//     <h5>${filteredBooks[item].published}</h5>
+//     <h5>Price: R${filteredBooks[item].price}</h5>
+//     <h5>${filteredBooks[item].genre}</h5>
+
+//   </div>
+//   <div class="card-footer">
+//   <a id="checkoutBtn" href="" class="btn btn-dark">Add to Checkout</a>
+//   </div>
+// </div>
+//         `;
+//       })
+// })

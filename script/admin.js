@@ -1,6 +1,5 @@
-let books = JSON.parse(localStorage.getItem("bookstore"))
-  ? JSON.parse(localStorage.getItem("bookstore"))
-  : [
+let books = JSON.parse(localStorage.getItem("bookstore")) ? 
+JSON.parse(localStorage.getItem("bookstore")) : [
       {
         id: 1,
         title: "It ends with us",
@@ -84,7 +83,7 @@ let books = JSON.parse(localStorage.getItem("bookstore"))
 
 function display() {
   Object.keys(books).forEach((bookshelf) => {
-    document.querySelector("tbody").innerHTML += 
+    document.querySelector(".bookstore").innerHTML += 
     ` 
     <tr>
     <th scope="row">${books[bookshelf].id}</th>
@@ -95,12 +94,12 @@ function display() {
     <td>${books[bookshelf].price}</td>
     <td>${books[bookshelf].genre}</td>
     <td><button type="button" class="btn btn-dark edit">edit</button></td>
-    <td><button type="button" onclick="" class="btn btn-dark delete">delete</button></td>
+    <td><button type="button" onclick= "remove(${books[bookshelf].id})" class="delete btn btn-dark ">delete</button></td>
   </tr>`;
   });
 }
 display();
-localStorage.setItem("tbody", JSON.stringify(books));
+localStorage.setItem("bookstore", JSON.stringify(books));
 
 // function addItems(){
 // }
@@ -155,13 +154,12 @@ add.addEventListener("click", (e) => {
 });
 
 
-//  let delete = document.querySelector(".delete");
-// add.addEventListener("click",(e) =>{
-// target=e.target;
-// if(target.library.contains('delete')){
-//     target.parentElement.parentElement.remove();
-// }
-
-// });
-
 // delete button//
+function remove(id) {
+localStorage.setItem("bookstore", JSON.stringify(books));
+document.querySelector('#delete');
+books.splice(id-1, 1)
+localStorage.setItem("bookstore",JSON.stringify(books))
+location.reload()
+}
+console.log(remove)
