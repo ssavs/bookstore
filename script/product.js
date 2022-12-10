@@ -84,7 +84,7 @@ let books = JSON.parse(localStorage.getItem("bookstore"))
 
 function display() {
   books.forEach((book) => {
-    document.querySelector("book").innerHTML += `
+    document.getElementById("book").innerHTML += `
         <div class="card" style="width: 18rem;">
         <img src="${book.img}" class="card-img-top" alt="...">
         <div class="card-body">
