@@ -81,10 +81,12 @@ let books = JSON.parse(localStorage.getItem("bookstore"))
         genre: "Fantasy",
       },
     ];
+    
+localStorage.setItem("bookstore", JSON.stringify(books));
 
 function display() {
   books.forEach((book) => {
-    document.getElementById("book").innerHTML += `
+    document.getElementById("bookstore").innerHTML += `
         <div class="card" style="width: 18rem;">
         <img src="${book.img}" class="card-img-top" alt="...">
         <div class="card-body">
@@ -104,7 +106,6 @@ function display() {
 }
 display();
 
-localStorage.setItem("bookstore", JSON.stringify(books));
 
 let checkoutPage = [];
 localStorage.setItem("checkoutStore", JSON.stringify(checkoutPage));
