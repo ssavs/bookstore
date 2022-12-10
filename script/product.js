@@ -94,7 +94,7 @@ function display() {
           <h2 class="author">${book.author}<h2>
           <h5>${book.published}</h5>
           <h5>Price: R${book.price}</h5>
-          <h5>${bookstore.genre}</h5>
+          <h5>${book.genre}</h5>
       
         </div>
         <div class="card-footer">

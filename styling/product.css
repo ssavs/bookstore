@@ -88,14 +88,14 @@ li a:hover:not(.active) {
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  color: #212529 !important;
+  color: #87888b !important;
   background-color: #ddd;
   font-size: x-large;
 }
 
 /* Add a dark background to the active button */
 .btn.active {
-  background-color: rgb(93, 89, 89);
+  background-color: rgb(204, 193, 193);
   color: white;
   font-size: x-large;
 }
@@ -111,6 +111,7 @@ li a:hover:not(.active) {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  flex-wrap: nowrap;
 }
 
 .author {
@@ -146,5 +147,4 @@ a {
   height: 30vh;
 }
 /* card footer */
-.card-footer {
-}
+
